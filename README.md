@@ -111,6 +111,16 @@ Example questions:
 - How do embeddings work in this repo?
 - How is semantic search implemented?
 - Where is retrieval evaluation defined?
+## Screenshots
+
+### Homepage
+![Homepage](assets/screenshots/homepage.jpg)
+
+### Repository-grounded answer
+![Repository Answer](assets/screenshots/repo-answer.jpg)
+
+### Out-of-scope question handling
+![Out of Scope](assets/screenshots/out-of-scope.jpg)
 
 ## Project Structure
 
@@ -150,3 +160,4 @@ course/
   README.md
   pyproject.toml
   uv.lock
+

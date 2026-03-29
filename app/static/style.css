@@ -24,43 +24,50 @@ body {
   background: linear-gradient(180deg, #030712 0%, #020617 100%);
   min-height: 92vh;
   padding: 28px 28px 24px 28px;
+  overflow: hidden;
 }
 
 .hero {
   margin-bottom: 18px;
 }
 
-.app-title {
+.hero-header {
   display: flex;
   align-items: center;
-  gap: 14px;
-  margin: 0;
-  font-size: 56px;
+  gap: 16px;
+  min-width: 0;
+}
+
+.hero-icon {
+  width: 188px;
+  height: 188px;
+  object-fit: contain;
+  flex: 0 0 28px;
+  display: block;
+}
+
+.hero-text {
+  min-width: 0;
+  flex: 1;
+}
+
+.app-title {
+  margin: 0 0 8px 0;
+  font-size: 54px;
   line-height: 1.05;
   font-weight: 800;
   letter-spacing: -0.9px;
   color: #f9fafb;
-}
-
-.title-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 42px;
-  border: 3px solid #f9fafb;
-  border-radius: 999px;
-  font-size: 20px;
-  line-height: 1;
-  color: #f9fafb;
+  word-break: break-word;
 }
 
 .app-subtitle {
-  margin: 14px 0 0 0;
-  font-size: 16px;
-  line-height: 1.35;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.4;
   color: #9ca3af;
   font-weight: 500;
+  word-break: break-word;
 }
 
 .chat-messages {
@@ -184,14 +191,18 @@ body {
     padding: 18px 14px 18px 14px;
   }
 
-  .app-title {
-    font-size: 36px;
+  .hero-header {
+    gap: 12px;
   }
 
-  .title-icon {
-    width: 32px;
-    height: 32px;
-    font-size: 16px;
+.hero-icon {
+  width: 32px;
+  height: 32px;
+  flex: 0 0 22px;
+}
+
+  .app-title {
+    font-size: 36px;
   }
 
   .app-subtitle {
@@ -212,4 +223,44 @@ body {
   .send-button {
     font-size: 15px;
   }
+}
+.message-icon-img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  display: block;
+}
+.message-icon {
+  flex: 0 0 42px;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4px;
+  overflow: visible;
+  padding: 0;
+  background: transparent;
+}
+
+.user-icon {
+  background: transparent;
+}
+
+.assistant-icon {
+  background: transparent;
+}
+
+.message-icon-img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  display: block;
+}
+
+.message-icon-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  display: block;
 }

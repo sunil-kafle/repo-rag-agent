@@ -30,7 +30,12 @@ function createMessageElement(role, text, renderMarkdown = false) {
 
   const icon = document.createElement("div");
   icon.className = `message-icon ${role === "user" ? "user-icon" : "assistant-icon"}`;
-  icon.textContent = role === "user" ? "☺" : "⚙";
+
+  const img = document.createElement("img");
+  img.className = "message-icon-img";
+  img.src = role === "user" ? "/static/human.png" : "/static/robot.png";
+  img.alt = role === "user" ? "User icon" : "Assistant icon";
+  icon.appendChild(img);
 
   const bubble = document.createElement("div");
   bubble.className = "message-bubble";

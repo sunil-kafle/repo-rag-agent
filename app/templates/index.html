@@ -3,21 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI FAQ Assistant</title>
+  <title>Repository RAG Agent</title>
   <link rel="stylesheet" href="/static/style.css" />
+  <link rel="icon" type="image/png" href="/static/doc_icon.png" />
 </head>
 <body>
   <div class="page">
     <div class="app-container">
       <header class="hero">
-        <h1 class="app-title">
-          <span class="title-icon">☺</span>
-          <span>AI FAQ Assistant</span>
-        </h1>
-        <p class="app-subtitle">Ask me anything about the DataTalksClub/faq repository</p>
+        <div class="hero-header">
+          <img src="/static/doc_icon.png" alt="Repository RAG Agent icon" class="hero-icon" />
+          <div class="hero-text">
+            <h1 class="app-title">Repository RAG Agent</h1>
+            <p class="app-subtitle">Ask questions about the indexed repository and get grounded answers with citations</p>
+          </div>
+        </div>
       </header>
 
-    <main id="chat-messages" class="chat-messages"></main>
+      <main id="chat-messages" class="chat-messages"></main>
 
       <form id="chat-form" class="chat-form">
         <textarea
