@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI FAQ Assistant</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="page">
+    <div class="app-container">
+      <header class="hero">
+        <h1 class="app-title">
+          <span class="title-icon">☺</span>
+          <span>AI FAQ Assistant</span>
+        </h1>
+        <p class="app-subtitle">Ask me anything about the DataTalksClub/faq repository</p>
+      </header>
+
+    <main id="chat-messages" class="chat-messages"></main>
+
+      <form id="chat-form" class="chat-form">
+        <textarea
+          id="question-input"
+          class="chat-input"
+          placeholder="Ask your question..."
+          rows="3"
+          required
+        ></textarea>
+        <div class="chat-actions">
+          <button id="send-button" class="send-button" type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
