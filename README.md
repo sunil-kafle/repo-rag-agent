@@ -111,6 +111,10 @@ Example questions:
 - How do embeddings work in this repo?
 - How is semantic search implemented?
 - Where is retrieval evaluation defined?
+## Demo Video
+
+Watch the project demo here: [Repository RAG Agent Demo](https://youtu.be/1bDXam7yEZ0)
+
 ## Screenshots
 
 ### Homepage
